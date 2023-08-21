@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,195 +59,22 @@
     <script defer src="./dist/js/include.js"></script>
     <!-- defer 적으면 순서 무시하고 우선으로 읽음. -->
   </head>
-
   <body>
+    <img src="./images/index.jpg" alt="#" />
     <div id="u-skip">
       <a href="#gnb"><span>주요메뉴 바로가기</span></a>
       <a href="#main"><span>컨텐츠 바로가기</span></a>
       <!-- <a href="#footer"><span>풋터 바로가기</span></a> -->
     </div>
 
-    <!-- HEADER -->
-    <div class="wrap">
-      <header data-include-path="./outline/header.html"></header>
-    </div>
-
-    <!-- MAIN -->
-    <div class="swiper slide-g slide-intro">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
-            alt=""
-          />
-          <div class="swiper-slide__txt">
-            <strong>제목</strong>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repudiandae, illum!
-            </p>
-            <a href="#">바로가기</a>
-          </div>
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+    <!-- header - cafe24에서 바로 -->
+    <!-- main -->
+    <section class="youtube">
+      <div class="youtube__area">
+        <div id="player"></div>
       </div>
-      <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <main id="main">
-      <!-- '제목'이 있는 그룹을 section이라고 함 -->
-      <section class="container section-g section-event">
-        <div class="inner">
-          <h2 class="section-tit">event</h2>
-          <!-- a 인라인 span 인라인 div 블록 p 블록 / 인라인 안에 블록 '잘' 안 씀 -->
-          <div class="section-contents">
-            <ul class="list-event">
-              <li>
-                <img
-                  src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  alt="event image"
-                />
-                <p>Lorem ipsum dolor sit amet.</p>
-              </li>
-              <li>
-                <img
-                  src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  alt="event image"
-                />
-                <p>Lorem ipsum dolor sit amet.</p>
-              </li>
-              <li>
-                <img
-                  src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  alt="event image"
-                />
-                <p>Lorem ipsum dolor sit amet.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-gray container section-g section-news">
-        <div class="inner">
-          <h2 class="section-tit abc">섹션 제목</h2>
-          <div class="section-contents">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
-            natus. Quod facilis aspernatur repellat velit iure vitae debitis
-            dolorem voluptas cumque sit quae, quisquam dolor libero numquam sint
-            amet fuga.
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-gray container section-g section-shopping">
-        <div class="inner">
-          <h2 class="section-tit abc">섹션 제목</h2>
-          <div class="section-shopping">
-            <ul class="lst-thumb-two-column">
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="thumb-shopping">
-                    <img
-                      src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfMTE2%2FMDAxNjg0ODAzNTU0MDEx.oOkpYSV0G19woSF2vZl3AYhGNhUx2AFpBjdARLKy4kMg.wrrbUnkngajTInaK4iqcju47dqfF5VvanhzwQItxU4cg.JPEG.mijinkim80%2F13.JPEG%22&type=nf308_200&service=navermain"
-                      alt="shopping"
-                    />
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-gray container section-g section-feed">
-        <div class="inner">
-          <h2 class="section-tit abc">섹션 제목</h2>
-          <div class="section-contents">섹션 컨텐츠</div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <div class="wrap">
-      <footer data-include-path="./outline/footer.html"></footer>
-    </div>
+      <div class="youtube__cover"></div>
+    </section>
+    <!-- footer - cafe24에서 바로 -->
   </body>
 </html>
