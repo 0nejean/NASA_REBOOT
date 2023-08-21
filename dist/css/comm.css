@@ -277,4 +277,166 @@ legend {
   font-size: 0;
   clear: both;
   content: "";
+}
+
+.headernfooter_training {
+  width: 100%;
+  height: 100px;
+  background: #000;
+  text-align: center;
+}
+.headernfooter_training .hnf_training_h2 {
+  color: red;
+  font-size: 60px;
+}
+
+.main_youtube1 {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.main_youtube1 .main_youtube__area1 {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+.main_youtube1 .main_youtube__area1::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.main_youtube1 .main_youtube__cover1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#main_player1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mission_wrap {
+  position: relative;
+}
+.mission_wrap .main_mission_h2 {
+  position: absolute;
+  top: 5%;
+  left: calc(50% - 70px);
+}
+.mission_wrap .main_mission_p {
+  position: absolute;
+  top: 12%;
+  left: calc(50% - 70px);
+}
+.mission_wrap .main_mission_btn {
+  position: absolute;
+  top: 80%;
+  left: calc(50% - 35px);
+}
+.mission_wrap .main_mission_bg {
+  width: 100%;
+  height: 580px;
+}
+
+.main_youtube2 {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.main_youtube2 .main_youtube__area2 {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+.main_youtube2 .main_youtube__area2::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.main_youtube2 .main_youtube__cover2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#main_player2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.picsntv_ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.picsntv_ul .picsntv_li1 {
+  width: 50%;
+  padding: 10px 5px 5px 10px;
+}
+.picsntv_ul .picsntv_li1 .picsntv_img {
+  width: 100%;
+}
+.picsntv_ul .picsntv_li2 {
+  width: 50%;
+  padding: 10px 10px 5px 5px;
+}
+.picsntv_ul .picsntv_li2 .picsntv_img {
+  width: 100%;
+}
+.picsntv_ul .picsntv_li3 {
+  width: 50%;
+  padding: 5px 5px 10px 10px;
+}
+.picsntv_ul .picsntv_li3 .picsntv_img {
+  width: 100%;
+}
+.picsntv_ul .picsntv_li4 {
+  width: 50%;
+  padding: 5px 10px 10px 5px;
+}
+.picsntv_ul .picsntv_li4 .picsntv_img {
+  width: 100%;
+}
+
+.main_slide_wrap {
+  margin-bottom: 10px;
+}
+.main_slide_wrap .main_slide_ul {
+  display: flex;
+  justify-content: center;
+}
+.main_slide_wrap .main_slide_ul .main_slide_a {
+  display: block;
+  width: 100%;
+  height: 580px;
 }/*# sourceMappingURL=comm.css.map */

@@ -55,26 +55,121 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="./dist/js/comm.js"></script>
-    <script defer src="./dist/js/include.js"></script>
+    <script src="./dist/js/comm.js"></script>
+    <script src="./dist/js/include.js"></script>
+    <script src="./dist/js/about_yt1.js"></script>
+    <script src="./dist/js/about_yt2.js"></script>
     <!-- defer 적으면 순서 무시하고 우선으로 읽음. -->
   </head>
   <body>
-    <img src="./images/index.jpg" alt="#" />
+    <!-- <img class="ref" src="./images/index.jpg" alt="#" /> -->
+
     <div id="u-skip">
       <a href="#gnb"><span>주요메뉴 바로가기</span></a>
       <a href="#main"><span>컨텐츠 바로가기</span></a>
       <!-- <a href="#footer"><span>풋터 바로가기</span></a> -->
     </div>
 
-    <!-- header - cafe24에서 바로 -->
-    <!-- main -->
-    <section class="youtube">
-      <div class="youtube__area">
-        <div id="player"></div>
-      </div>
-      <div class="youtube__cover"></div>
+    <!-- ****************** header - cafe24에서 바로 ****************** -->
+    <section class="headernfooter_training">
+      <h2 class="hnf_training_h2">진짜 헤더/풋터는 카페24에서 만나요.</h2>
     </section>
-    <!-- footer - cafe24에서 바로 -->
+
+    <!-- ****************** main ****************** -->
+    <div class="main_wrap">
+      <!-- 1. MAIN_ABOUT -->
+      <section class="main_youtube1">
+        <div class="main_youtube__area1">
+          <div id="main_player1"></div>
+        </div>
+        <div class="main_youtube__cover1"></div>
+      </section>
+
+      <!-- 2. MAIN_MISSION -->
+      <div class="mission_wrap">
+        <section class="main_mission">
+          <h2 class="main_mission_h2">Space Station</h2>
+          <p class="main_mission_p">20 Years on the Station</p>
+          <button class="btn_g main_mission_btn">Learn more</button>
+          <img
+            class="main_mission_bg"
+            src="./images/main/main_mission.jpg"
+            alt="#"
+          />
+        </section>
+      </div>
+
+      <!-- 3. MAIN_TOPIC -->
+      <section class="main_youtube2">
+        <div class="main_youtube__area2">
+          <div id="main_player2"></div>
+        </div>
+        <div class="main_youtube__cover2"></div>
+      </section>
+
+      <!-- 4. MAIN_Pics & TV -->
+      <div class="picsntv_wrap">
+        <ul class="picsntv_ul">
+          <li class="picsntv_li1">
+            <a href="#"
+              ><img
+                class="picsntv_img"
+                src="./images/main/main_g1_bg.jpg"
+                alt="#"
+            /></a>
+          </li>
+          <li class="picsntv_li2">
+            <a href="#"
+              ><img
+                class="picsntv_img"
+                src="./images/main/main_g2_bg.jpg"
+                alt="#"
+            /></a>
+          </li>
+          <li class="picsntv_li3">
+            <a href="#"
+              ><img
+                class="picsntv_img"
+                src="./images/main/main_g3_bg.jpg"
+                alt="#"
+            /></a>
+          </li>
+          <li class="picsntv_li4">
+            <a href="#"
+              ><img
+                class="picsntv_img"
+                src="./images/main/main_g4_bg.jpg"
+                alt="#"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 5. MAIN_SLID -->
+      <div class="main_slide_wrap">
+        <ul class="main_slide_ul">
+          <li class="main_slide_li">
+            <a class="main_slide_a" href="#"
+              ><img src="./images/main/main_slide1.jpg" alt="#"
+            /></a>
+          </li>
+          <li class="main_slide_li">
+            <a class="main_slide_a" href="#"
+              ><img src="./images/main/main_slide2.jpg" alt="#"
+            /></a>
+          </li>
+          <li class="main_slide_li">
+            <a class="main_slide_a" href="#"
+              ><img src="./images/main/main_slide3.jpg" alt="#"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ****************** footer - cafe24에서 바로 ****************** -->
+    <section class="headernfooter_training">
+      <h2 class="hnf_training_h2">진짜 헤더/풋터는 카페24에서 만나요.</h2>
+    </section>
   </body>
 </html>
