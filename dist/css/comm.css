@@ -342,45 +342,11 @@ legend {
   height: 580px;
 }
 
-.main_youtube2 {
-  position: relative;
-  height: 700px;
-  background-color: #333;
-  overflow: hidden;
-}
-.main_youtube2 .main_youtube__area2 {
-  width: 1920px;
-  position: absolute;
-  /* 16비율 */
-  left: 50%;
-  margin-left: -960px;
-  /* 9비율 */
-  top: 50%;
-  margin-top: -540px;
-}
-.main_youtube2 .main_youtube__area2::before {
-  content: "";
-  display: block;
-  /* 16:9 영상 비율로 요소 크기 만들기! */
-  width: 100%;
-  height: 0;
-  padding-top: 56.25%;
-}
-.main_youtube2 .main_youtube__cover2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-#main_player2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.main_topic_video {
+  width: 100% !important;
+  height: 580px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .picsntv_ul {
@@ -461,51 +427,61 @@ legend {
 .about_middle {
   width: 100%;
   height: 610px;
-  background-color: red;
+  background-color: black;
 }
-.about_middle .about_ul {
+.about_middle .about_ul1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 100%;
 }
-.about_middle .about_ul .about_li1 {
+.about_middle .about_ul1 .about_li_a {
   width: 33.3%;
 }
-.about_middle .about_ul .about_li1 .about_ul2 {
+.about_middle .about_ul1 .about_li_a .about_ul2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-1 {
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-1 {
   width: 100%;
 }
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-1 .about_middle_s1 {
-  border-radius: 20px;
-  width: 100%;
-  height: 240px;
-}
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-2 {
-  width: 60%;
-}
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-2 .about_middle_s2 {
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-1 .about_middle_s1 {
   border-radius: 20px;
   width: 100%;
   height: 250px;
 }
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-3 {
-  width: 40%;
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-2 {
+  width: 50%;
 }
-.about_middle .about_ul .about_li1 .about_ul2 .about_li2-3 .about_middle_s3 {
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-2 .about_middle_s2 {
   border-radius: 20px;
-  width: 90%;
+  width: 100%;
   height: 250px;
 }
-.about_middle .about_ul3 {
-  display: flex;
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-3 {
+  width: 50%;
+  padding-left: 10px;
+}
+.about_middle .about_ul1 .about_li_a .about_ul2 .about_li2-3 .about_middle_s3 {
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+}
+.about_middle .about_ul1 .about_li_b .about_middle_s4 {
+  border-radius: 20px;
+  height: 520px;
+}
+.about_middle .about_ul1 .about_li_c .about_middle_s5 {
+  border-radius: 20px;
+  height: 250px;
+}
+.about_middle .about_ul1 .about_li_c .about_middle_s6 {
+  border-radius: 20px;
+  height: 250px;
 }
 
 .about_bottom {

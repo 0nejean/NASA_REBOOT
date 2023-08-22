@@ -73,7 +73,6 @@
     <script src="./dist/js/comm.js"></script>
     <script src="./dist/js/include.js"></script>
     <script src="./dist/js/about_yt1.js"></script>
-    <script src="./dist/js/about_yt2.js"></script>
     <!-- defer 적으면 순서 무시하고 우선으로 읽음. -->
   </head>
   <body>
@@ -115,12 +114,15 @@
       </div>
 
       <!-- 3. MAIN_TOPIC -->
-      <section class="main_youtube2">
-        <div class="main_youtube__area2">
-          <div id="main_player2"></div>
-        </div>
-        <div class="main_youtube__cover2"></div>
-      </section>
+      <video class="main_topic_video" autoplay muted controls>
+        <source
+          type="video/mp4"
+          src="./dist/videos/mission_video.mp4"
+          autoplay
+          loop
+          muted
+        />
+      </video>
 
       <!-- 4. MAIN_Pics & TV -->
       <div id="picsntv_wrap">
