@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+#wrap {
+  background: black;
+}
+
+// video
+.topic_video_full {
+  width: 100% !important;
+  height: 650px !important;
+  object-fit: cover;
+}
+
+// slider
+.sliderText {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 5%;
+  color: white;
+  .topic_h2 {
+    font-size: xxx-large;
+  }
+  .topic_p {
+    font-size: x-large;
+  }
+}
+
+// https://velog.io/@geniee1220/CSS-CSS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EC%9C%BC%EB%A1%9C-%EC%83%81%ED%95%98-%EB%AC%B4%ED%95%9C-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EA%B5%AC%ED%98%84
+
+.sliderWrap {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .slider {
+    width: 50%;
+    margin: 0 30px;
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    img {
+      object-fit: cover;
+      width: 400px;
+      height: 100%;
+      border-radius: 20%;
+    }
+    a {
+      display: block;
+      width: 400px;
+      height: 100%;
+      border-radius: 20%;
+    }
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+// board
+#board {
+  width: 100%;
+  height: 700px;
+  background: white;
+  // background: linear-gradient(180deg, #010101 0%, #040a0f 47.92%, #040b10 100%);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
+// bottom
+.topic_main_bottom_bg {
+  img {
+    width: 100%;
+    height: 1000px;
+    object-fit: fill;
+  }
+}

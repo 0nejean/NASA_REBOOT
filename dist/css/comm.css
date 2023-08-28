@@ -511,4 +511,92 @@ legend {
 .about_bottom .about_bottom_bg {
   width: 100%;
   height: 580px;
+}
+
+#wrap {
+  background: black;
+}
+
+.topic_video_full {
+  width: 100% !important;
+  height: 650px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sliderText {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 5%;
+  color: white;
+}
+.sliderText .topic_h2 {
+  font-size: xxx-large;
+}
+.sliderText .topic_p {
+  font-size: x-large;
+}
+
+.sliderWrap {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.sliderWrap .slider {
+  width: 50%;
+  margin: 0 30px;
+  animation-name: slider;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.sliderWrap .slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 20%;
+}
+.sliderWrap .slider a {
+  display: block;
+  width: 400px;
+  height: 100%;
+  border-radius: 20%;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#board {
+  width: 100%;
+  height: 700px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
+
+.topic_main_bottom_bg img {
+  width: 100%;
+  height: 1000px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }/*# sourceMappingURL=comm.css.map */

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASA_REBOOTS | 1.index</title>
+    <title>NASA_REBOOTS | 4. topic</title>
     <meta
       name="description"
       content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
@@ -75,111 +75,85 @@
     <!-- defer 적으면 순서 무시하고 우선으로 읽음. -->
   </head>
   <body>
-    <!-- <img class="ref" src="./images/index.jpg" alt="#" /> -->
-
     <div id="u-skip">
       <a href="#gnb"><span>주요메뉴 바로가기</span></a>
       <a href="#wrap"><span>컨텐츠 바로가기</span></a>
     </div>
 
     <!-- ****************** header - cafe24에서 바로 ****************** -->
-    <section class="headernfooter_training">
+    <header class="headernfooter_training">
       <h2 class="hnf_training_h2">진짜 헤더/풋터는 카페24에서 만나요.</h2>
-    </section>
+    </header>
 
-    <!-- ****************** main ****************** -->
+    <!-- ****************** main - video / slider / board ****************** -->
     <div id="wrap">
-      <!-- 1. MAIN_ABOUT -->
-      <!-- https://gist.github.com/bajpangosh/d322c4d7823d8707e19d20bc71cd5a4f -->
-      <section class="main_youtube1">
-        <div class="main_youtube__area1">
-          <div id="main_player1"></div>
-        </div>
-        <div class="main_youtube__cover1"></div>
-      </section>
-
-      <!-- 2. MAIN_MISSION -->
-      <div id="mission_wrap">
-        <section class="main_mission">
-          <h2 class="main_mission_h2">Space Station</h2>
-          <p class="main_mission_p">20 Years on the Station</p>
-          <button class="btn_g main_mission_btn1">Learn more</button>
-          <img
-            class="main_mission_bg"
-            src="./dist/images/main/main_mission.jpg"
-            alt="#"
-          />
+      <main id="topic_main">
+        <!-- video -->
+        <section id="topic_video">
+          <video class="topic_video_full" controls="0" autoplay muted loop>
+            <source type="video/mp4" src="./dist/videos/topic_video.mp4" />
+          </video>
         </section>
-      </div>
 
-      <!-- 3. MAIN_TOPIC -->
-      <video class="main_topic_video" controls="0" autoplay muted loop>
-        <source type="video/mp4" src="./dist/videos/topic_video.mp4" />
-      </video>
+        <!-- slider -->
+        <article id="slider_g">
+          <div class="sliderText">
+            <h2 class="topic_h2">Moon to MARS</h2>
+            <p class="topic_p">Innovative &#38; Sustainable Topic</p>
+          </div>
 
-      <!-- 4. MAIN_Pics & TV -->
-      <div id="picsntv_wrap">
-        <ul class="picsntv_ul">
-          <li class="picsntv_li1">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g1_bg.jpg"
-                alt="#"
-            /></a>
-          </li>
-          <li class="picsntv_li2">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g2_bg.jpg"
-                alt="#"
-            /></a>
-          </li>
-          <li class="picsntv_li3">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g3_bg.jpg"
-                alt="#"
-            /></a>
-          </li>
-          <li class="picsntv_li4">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g4_bg.jpg"
-                alt="#"
-            /></a>
-          </li>
-        </ul>
-      </div>
+          <div class="sliderWrap">
+            <div class="slider s1">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_1_bg.png" alt="" />
+              </a>
+            </div>
+            <div class="slider s2">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_2_bg.png" alt="" />
+              </a>
+            </div>
+            <div class="slider s3">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_3_bg.jpg" alt="" />
+              </a>
+            </div>
+            <div class="slider s4">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_4_bg.jpg" alt="" />
+              </a>
+            </div>
+            <div class="slider s5">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_5_bg.jpg" alt="" />
+              </a>
+            </div>
+            <div class="slider s6">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_2_bg.png" alt="" />
+              </a>
+            </div>
+            <div class="slider s7">
+              <a href="#">
+                <img src="./dist/images/topic/Topic_R_1_bg.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <!-- 5. MAIN_SLID -->
-      <div id="main_slide_wrap">
-        <ul class="main_slide_ul">
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide1.jpg" alt="#"
-            /></a>
-          </li>
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide2.jpg" alt="#"
-            /></a>
-          </li>
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide3.jpg" alt="#"
-            /></a>
-          </li>
-        </ul>
+        <!-- board -->
+        <section id="board">
+          <h1>BOARD USED GNU</h1>
+        </section>
+      </main>
+      <!-- bottom -->
+      <div class="topic_main_bottom_bg">
+        <img src="./dist/images/topic/topic_bottom.jpg" alt="이미지 설명" />
       </div>
     </div>
-
     <!-- ****************** footer - cafe24에서 바로 ****************** -->
-    <section class="headernfooter_training">
+    <footer class="headernfooter_training">
       <h2 class="hnf_training_h2">진짜 헤더/풋터는 카페24에서 만나요.</h2>
-    </section>
+    </footer>
   </body>
 </html>
