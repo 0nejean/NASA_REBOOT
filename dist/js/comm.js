@@ -18,9 +18,11 @@ function onYouTubePlayerAPIReady() {
     },
   });
 }
-// main - 하단 슬라이드 (used swiper)
+
+// main - 하단 슬라이드 (used external js: flickity.pkgd.js)
 
 // topic - 슬라이드 (used slick)
+// https://devwoodie.tistory.com/10
 $(function () {
   $(".slider-div").slick({
     slide: "div", //슬라이드 되어야 할 div
