@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+#wrap_mission {
+  background: white;
+}
+
+// top
+#mission_top {
+  position: relative;
+  .mission_top_h2 {
+    position: absolute;
+    font-size: xxx-large;
+    top: 15%;
+    left: calc(50% - 150px);
+  }
+  .mission_top_p {
+    position: absolute;
+    font-size: x-large;
+    top: 25%;
+    left: calc(50% - 120px);
+  }
+  .mission_top_btn1 {
+    position: absolute;
+    top: 75%;
+    left: calc(50% - 50px);
+  }
+  .mission_top_img {
+    width: 100%;
+    height: 800px;
+  }
+}
+
+.mission_top_movinfnt {
+  width: 100%;
+  height: 100px;
+  background: white;
+  color: #9d9993;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: xx-large;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+  .movinfnt {
+    padding-top: 1%;
+    animation: textLoop 100s linear infinite;
+  }
+  @keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// middle
+#mission_middle {
+  position: relative;
+  width: 100%;
+  height: 800px;
+
+  .mission_middle_banner {
+    height: 50%;
+    ul {
+      display: flex;
+      li {
+        width: 50%;
+        img {
+          width: 100%;
+          filter: brightness(1);
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        a {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .mission_middle_card {
+    height: 50%;
+    padding: 1% 3% 1% 3%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 30%;
+        border-radius: 20px;
+        img {
+          width: 100%;
+          border-radius: 20px;
+          filter: brightness(1);
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        a {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// bottom
+#mission_bottom {
+  width: 100%;
+  height: 800px;
+}

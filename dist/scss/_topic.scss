@@ -40,48 +40,43 @@
     /* 커스텀 버튼 위치를 잡기 위해 relative를 줌 */
     height: 500px;
     width: 100%;
+    .slider-div {
+      /* slick을 적용시킬 요소 */
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 100%;
+        filter: brightness(1);
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+      a {
+        width: 100%;
+        height: 400px;
+      }
+      .item {
+        /* 슬라이드 되어야 할 아이템 */
+        width: 100%;
+        height: 400px;
+        border: 1px solid black;
+        background: black;
+      }
+    }
   }
-  .slider-div {
-    /* slick을 적용시킬 요소 */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  a {
-    width: 100%;
-    height: 400px;
-  }
-  .item {
-    /* 슬라이드 되어야 할 아이템 */
-    width: 100%;
-    height: 400px;
-    border: 1px solid black;
-    background: black;
-  }
-  .next,
-  .prev {
-    /* 커스텀 버튼. 위치를 잡기위해 absolute 를 준다 */
-    position: absolute;
-    top: 35%;
-  }
-  .next {
-    right: 5%;
-  }
-  .prev {
-    left: 5%;
-  }
-}
 
-// board
-#board {
-  width: 100%;
-  height: 700px;
-  background: white;
-  // background: linear-gradient(180deg, #010101 0%, #040a0f 47.92%, #040b10 100%);
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: xxx-large;
+  // .next,
+  // .prev {
+  //   /* 커스텀 버튼. 위치를 잡기위해 absolute 를 준다 */
+  //   position: absolute;
+  //   top: 35%;
+  // }
+  // .next {
+  //   right: 5%;
+  // }
+  // .prev {
+  //   left: 5%;
+  // }
 }
 
 // bottom

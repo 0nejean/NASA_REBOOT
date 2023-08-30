@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#wrap_picsntv {
+  background: black;
+}
+
+#mission_top {
+  width: 100%;
+  height: 760px;
+  .mission_top_g {
+    display: flex;
+    .picsntv_bg {
+      width: 50%;
+      height: 760px;
+    }
+    .picsntv_youtube {
+      position: relative;
+      width: 50%;
+      height: 760px;
+      background-color: black;
+      overflow: hidden;
+      .picsntv_area {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        // /* 16비율 */
+        // left: 50%;
+        // margin-left: calc(100% / -2);
+
+        // /* 9비율 */
+        // top: 50%;
+        // margin-top: calc(100% * 9 / 16 / -2);
+
+        &::before {
+          content: "";
+          display: block;
+          /* 16:9 영상 비율로 요소 크기 만들기! */
+          width: 100%;
+          height: 0;
+          padding-top: 56.25%;
+        }
+        #picsntv_player {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+#picsntv_bottom {
+  width: 100%;
+  height: 1000px;
+  background: yellow;
+}

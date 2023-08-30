@@ -1,6 +1,53 @@
 // comm.css - 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "about", "topic";
+@import "variables", "mixin", "fonts", "reset", "main", "about", "mission",
+  "topic", "picsntv";
 
 // id 값은 #, class 값은 . 으로 지정 / 가장 큰 단위는 그냥 이름 적으면 됨
 // 공통
+
+// Header & Footer
+.headernfooter_exam {
+  .header_exam {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100px !important;
+    background: rgb(0, 0, 0, 0.9);
+    backdrop-filter: blur(1);
+    align-items: center;
+    h2 {
+      color: white;
+      font-size: 65px;
+    }
+  }
+  .footer_exam {
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 200px !important;
+    background: black;
+    align-items: center;
+  }
+  h2 {
+    color: white;
+    font-size: 65px;
+  }
+}
+
+// board
+#board {
+  width: 100%;
+  height: 800px;
+  background: black;
+  // background: linear-gradient(180deg, #010101 0%, #040a0f 47.92%, #040b10 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
