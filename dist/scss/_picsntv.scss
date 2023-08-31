@@ -9,10 +9,56 @@
   height: 760px;
   .mission_top_g {
     display: flex;
+    // flex-direction: row;
     .picsntv_bg {
+      position: relative;
       width: 50%;
       height: 760px;
+      .picsntv_logo {
+        display: block;
+        position: absolute;
+        width: 6.1%;
+        height: 6.1%;
+        top: 20%;
+        left: 63%;
+        text-indent: -9999px;
+        background: url(../images/nasa_logo.png) 0 0 / contain no-repeat;
+      }
+      h2 {
+        display: block;
+        position: absolute;
+        top: 18%;
+        left: 70%;
+        font-size: xxx-large;
+      }
+      p {
+        display: block;
+        position: absolute;
+        top: 27%;
+        left: 58%;
+        font-size: xx-large;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 37%;
+        left: 45%;
+        font-size: xxx-large;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        color: transparent;
+      }
+      .picsntv_top_bg {
+        display: block;
+        color: white;
+        width: 100%;
+        height: 760px;
+        text-indent: -9999px;
+        background: url(../images/picsntv/picsntv_bg1.jpg) 0 0 / contain
+          no-repeat;
+      }
     }
+
     .picsntv_youtube {
       position: relative;
       width: 50%;
@@ -21,23 +67,23 @@
       overflow: hidden;
       .picsntv_area {
         width: 100%;
-        height: 100%;
+        height: 760px;
         position: absolute;
 
-        // /* 16비율 */
-        // left: 50%;
-        // margin-left: calc(100% / -2);
+        /* 16비율 */
+        left: 50%;
+        margin-left: calc(100% / -2);
 
-        // /* 9비율 */
-        // top: 50%;
-        // margin-top: calc(100% * 9 / 16 / -2);
+        /* 9비율 */
+        top: 50%;
+        margin-top: calc(100% * 9 / 16 / -2);
 
         &::before {
           content: "";
           display: block;
           /* 16:9 영상 비율로 요소 크기 만들기! */
           width: 100%;
-          height: 0;
+          height: 760px;
           padding-top: 56.25%;
         }
         #picsntv_player {
@@ -55,5 +101,132 @@
 #picsntv_bottom {
   width: 100%;
   height: 1000px;
-  background: yellow;
+  background: white;
+  #gallery {
+    padding-top: 1%;
+    overflow: hidden;
+    .gallery_g {
+      display: block;
+      width: 300px;
+      height: 200px;
+      text-indent: -9999px;
+      border-radius: 20px;
+      filter: brightness(1);
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
+    .gallery1 {
+      animation: gallery1Movin 200s linear infinite;
+      width: 100%;
+      height: 33.3%;
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      .gallery1_image1 {
+        background: url(../images/picsntv/g1_i1.png) 0 0 / contain no-repeat;
+      }
+      .gallery1_image2 {
+        background: url(../images/picsntv/g1_i2.png) 0 0 / contain no-repeat;
+      }
+      .gallery1_image3 {
+        background: url(../images/picsntv/g1_i3.png) 0 0 / contain no-repeat;
+      }
+      .gallery1_image4 {
+        background: url(../images/picsntv/g1_i4.png) 0 0 / contain no-repeat;
+      }
+      .gallery1_image5 {
+        background: url(../images/picsntv/g1_i5.png) 0 0 / contain no-repeat;
+      }
+      .gallery1_image6 {
+        background: url(../images/picsntv/g1_i6.png) 0 0 / contain no-repeat;
+      }
+    }
+    .gallery2 {
+      position: relative;
+      width: 100%;
+      height: 33.3%;
+      padding: 1% 0%;
+      span {
+        position: absolute;
+        line-height: 160%;
+        top: 0;
+        left: 70%;
+        font-family: "Rubik Mono One";
+        font-size: 150px;
+        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 450px;
+        text-indent: -9999px;
+        background: url(../images/picsntv/g2_i1.png) 0 0 / contain no-repeat;
+      }
+    }
+    .gallery3 {
+      animation: gallery3Movin 200s linear infinite;
+      width: 100%;
+      height: 33.3%;
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      .gallery3_image1 {
+        background: url(../images/picsntv/g3_i1.png) 0 0 / contain no-repeat;
+      }
+      .gallery3_image2 {
+        background: url(../images/picsntv/g3_i2.png) 0 0 / contain no-repeat;
+      }
+      .gallery3_image3 {
+        background: url(../images/picsntv/g3_i3.png) 0 0 / contain no-repeat;
+        display: block;
+        width: 600px;
+        height: 200px;
+        text-indent: -9999px;
+        border-radius: 20px;
+        filter: brightness(1);
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+      .gallery3_image4 {
+        background: url(../images/picsntv/g3_i4.png) 0 0 / contain no-repeat;
+      }
+      .gallery3_image5 {
+        background: url(../images/picsntv/g3_i5.png) 0 0 / contain no-repeat;
+      }
+    }
+
+    @keyframes gallery1Movin {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes gallery3Movin {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
 }

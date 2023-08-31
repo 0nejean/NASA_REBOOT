@@ -742,8 +742,51 @@ legend {
   display: flex;
 }
 #mission_top .mission_top_g .picsntv_bg {
+  position: relative;
   width: 50%;
   height: 760px;
+}
+#mission_top .mission_top_g .picsntv_bg .picsntv_logo {
+  display: block;
+  position: absolute;
+  width: 6.1%;
+  height: 6.1%;
+  top: 20%;
+  left: 63%;
+  text-indent: -9999px;
+  background: url(../images/nasa_logo.png) 0 0/contain no-repeat;
+}
+#mission_top .mission_top_g .picsntv_bg h2 {
+  display: block;
+  position: absolute;
+  top: 18%;
+  left: 70%;
+  font-size: xxx-large;
+}
+#mission_top .mission_top_g .picsntv_bg p {
+  display: block;
+  position: absolute;
+  top: 27%;
+  left: 58%;
+  font-size: xx-large;
+}
+#mission_top .mission_top_g .picsntv_bg span {
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 45%;
+  font-size: xxx-large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+}
+#mission_top .mission_top_g .picsntv_bg .picsntv_top_bg {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 760px;
+  text-indent: -9999px;
+  background: url(../images/picsntv/picsntv_bg1.jpg) 0 0/contain no-repeat;
 }
 #mission_top .mission_top_g .picsntv_youtube {
   position: relative;
@@ -754,15 +797,21 @@ legend {
 }
 #mission_top .mission_top_g .picsntv_youtube .picsntv_area {
   width: 100%;
-  height: 100%;
+  height: 760px;
   position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -50%;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -28.125%;
 }
 #mission_top .mission_top_g .picsntv_youtube .picsntv_area::before {
   content: "";
   display: block;
   /* 16:9 영상 비율로 요소 크기 만들기! */
   width: 100%;
-  height: 0;
+  height: 760px;
   padding-top: 56.25%;
 }
 #mission_top .mission_top_g .picsntv_youtube .picsntv_area #picsntv_player {
@@ -776,7 +825,126 @@ legend {
 #picsntv_bottom {
   width: 100%;
   height: 1000px;
-  background: yellow;
+  background: white;
+}
+#picsntv_bottom #gallery {
+  padding-top: 1%;
+  overflow: hidden;
+}
+#picsntv_bottom #gallery .gallery_g {
+  display: block;
+  width: 300px;
+  height: 200px;
+  text-indent: -9999px;
+  border-radius: 20px;
+  filter: brightness(1);
+}
+#picsntv_bottom #gallery .gallery_g:hover {
+  filter: brightness(0.5);
+}
+#picsntv_bottom #gallery .gallery1 {
+  animation: gallery1Movin 200s linear infinite;
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image1 {
+  background: url(../images/picsntv/g1_i1.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image2 {
+  background: url(../images/picsntv/g1_i2.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image3 {
+  background: url(../images/picsntv/g1_i3.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image4 {
+  background: url(../images/picsntv/g1_i4.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image5 {
+  background: url(../images/picsntv/g1_i5.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery1 .gallery1_image6 {
+  background: url(../images/picsntv/g1_i6.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery2 {
+  position: relative;
+  width: 100%;
+  height: 33.3%;
+  padding: 1% 0%;
+}
+#picsntv_bottom #gallery .gallery2 span {
+  position: absolute;
+  line-height: 160%;
+  top: 0;
+  left: 70%;
+  font-family: "Rubik Mono One";
+  font-size: 150px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+#picsntv_bottom #gallery .gallery2 a {
+  display: block;
+  width: 100%;
+  height: 450px;
+  text-indent: -9999px;
+  background: url(../images/picsntv/g2_i1.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery3 {
+  animation: gallery3Movin 200s linear infinite;
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image1 {
+  background: url(../images/picsntv/g3_i1.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image2 {
+  background: url(../images/picsntv/g3_i2.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image3 {
+  background: url(../images/picsntv/g3_i3.png) 0 0/contain no-repeat;
+  display: block;
+  width: 600px;
+  height: 200px;
+  text-indent: -9999px;
+  border-radius: 20px;
+  filter: brightness(1);
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image3:hover {
+  filter: brightness(0.5);
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image4 {
+  background: url(../images/picsntv/g3_i4.png) 0 0/contain no-repeat;
+}
+#picsntv_bottom #gallery .gallery3 .gallery3_image5 {
+  background: url(../images/picsntv/g3_i5.png) 0 0/contain no-repeat;
+}
+@keyframes gallery1Movin {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes gallery3Movin {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .headernfooter_exam .header_exam {
