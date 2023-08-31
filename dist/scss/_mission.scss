@@ -6,6 +6,8 @@
 
 // top
 #mission_top {
+  width: 100%;
+  height: 900px;
   position: relative;
   .mission_top_h2 {
     position: absolute;
@@ -28,40 +30,39 @@
     width: 100%;
     height: 800px;
   }
-}
-
-.mission_top_movinfnt {
-  width: 100%;
-  height: 100px;
-  background: white;
-  color: #9d9993;
-  display: flex;
-  flex: 0 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: xx-large;
-  font-weight: 700;
-  transition: 0.3s;
-  cursor: pointer;
-  &:hover {
-    color: black;
-  }
-  .movinfnt {
-    padding-top: 1%;
-    animation: textLoop 100s linear infinite;
-  }
-  @keyframes textLoop {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+  .mission_top_movinfnt {
+    width: 100%;
+    height: 100px;
+    background: white;
+    color: #9d9993;
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: xx-large;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: black;
     }
-    50% {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
+    .movinfnt {
+      padding-top: 1%;
+      animation: textLoop 100s linear infinite;
     }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+    @keyframes textLoop {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
     }
   }
 }
