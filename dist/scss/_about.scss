@@ -25,10 +25,15 @@
   }
   .about_top_btn1 {
     color: white;
-    background-color: white;
     position: absolute;
     top: 80%;
     left: calc(50% - 70px);
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 90px;
+    }
   }
   .about_top_bg {
     display: block;
@@ -265,10 +270,15 @@
   }
   .about_bottom_btn1 {
     color: white;
-    background-color: white;
     position: absolute;
     top: 57%;
     left: calc(50% - 600px);
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 70px;
+    }
   }
   .about_bottom_bg {
     display: block;

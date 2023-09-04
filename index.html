@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASA_REBOOTS | 1. main</title>
+    <title>NASA_REBOOTS | 1. index</title>
     <meta
       name="description"
       content="This is a Website for portfolio themed 'NASA'"
@@ -53,8 +53,6 @@
   </head>
 
   <body>
-    <!-- <img class="ref" src="./images/index.jpg" alt="#" /> -->
-
     <div id="u-skip">
       <a href="#gnb"><span>주요메뉴 바로가기</span></a>
       <a href="#wrap"><span>컨텐츠 바로가기</span></a>
@@ -68,12 +66,11 @@
     <!-- ****************** main ****************** -->
     <main id="wrap_main">
       <!-- 1. MAIN_ABOUT -->
-      <!-- https://gist.github.com/bajpangosh/d322c4d7823d8707e19d20bc71cd5a4f -->
-      <section class="main_youtube">
+      <div class="main_youtube">
         <div class="main_youtube_area">
           <div id="main_player"></div>
         </div>
-      </section>
+      </div>
 
       <!-- 2. MAIN_MISSION -->
       <div id="main_mission_wrap">
@@ -83,57 +80,65 @@
               <h2 class="main_mission_h2">Space Station</h2>
               <p class="main_mission_p">20 Years on the Station</p>
               <button class="btn_g main_mission_btn1">Learn more</button>
+              <a class="main_mission_bg" href="#"
+                >main mission area backgroud image : spacestation image with
+                white wallpaper</a
+              >
             </li>
           </ul>
-          <img
-            class="main_mission_bg"
-            src="./dist/images/main/main_mission.jpg"
-            alt="#"
-          />
         </section>
       </div>
 
       <!-- 3. MAIN_Pics & TV -->
       <div id="main_picsntv_wrap">
-        <ul class="picsntv_ul">
-          <li class="picsntv li1">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g1_bg.jpg"
-                alt="#"
-            /></a>
+        <ul class="main_picsntv_ul">
+          <li class="main_picsntv_li_g main_picsntv_li1">
+            <a href="#" class="main_picntvimg_g main_picsntv_img_1"
+              >main pics n tv image1 about Astronaut in space</a
+            >
+            <h2 class="main_picsntv_li1_h2">
+              Astronaut <br />
+              in space
+            </h2>
+            <p class="main_picsntv_li1_p">Beyond the World</p>
+            <button class="main_picsntv_li1_btn">Watch Now</button>
           </li>
-          <li class="picsntv li2">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g2_bg.jpg"
-                alt="#"
-            /></a>
+          <li class="main_picsntv_li_g main_picsntv_li2">
+            <a href="#" class="main_picntvimg_g main_picsntv_img_2"
+              >main pics n tv image2 about Triumph After Splashdown of Apollo
+              11</a
+            >
+            <h2 class="main_picsntv_li2_h2">
+              Triumph <br />After <br />
+              Splashdown <br />of Apollo 11
+            </h2>
+            <p class="main_picsntv_li2_p">
+              Neil Armstrong <br />landed on the moon
+            </p>
+            <button class="main_picsntv_li2_btn">Watch Now</button>
           </li>
-          <li class="picsntv li3">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g3_bg.jpg"
-                alt="#"
-            /></a>
+          <li class="main_picsntv_li_g main_picsntv_li3">
+            <a href="#" class="main_picntvimg_g main_picsntv_img_3"
+              >main pics n tv image3 FAR FROM EARTH</a
+            >
+            <h2 class="main_picsntv_li3_h2">FAR <br />FROM <br />EARTH</h2>
+            <p class="main_picsntv_li3_p">A Voyager <br />From Home</p>
+            <button class="main_picsntv_li3_btn">Watch Now</button>
           </li>
-          <li class="picsntv li4">
-            <a href="#"
-              ><img
-                class="picsntv_img"
-                src="./dist/images/main/main_g4_bg.jpg"
-                alt="#"
-            /></a>
+          <li class="main_picsntv_li_g main_picsntv_li4">
+            <a href="#" class="main_picntvimg_g main_picsntv_img_4"
+              >main pics n tv image4 NASA TV</a
+            >
+            <h2 class="main_picsntv_li4_h2">NASA TV</h2>
+            <p class="main_picsntv_li4_p">Streaming on Youtube</p>
+            <button class="main_picsntv_li4_btn">Watch Now</button>
           </li>
         </ul>
       </div>
 
       <!-- 4. MAIN_TOPIC -->
       <div id="main_topic_wrap">
-        <video class="main_topic_video" controls="0" autoplay muted loop>
+        <video class="main_topic_video" autoplay muted loop>
           <source type="video/mp4" src="./dist/videos/topic_video.mp4" />
         </video>
         <h2 class="main_topic_h2">Moon to MARS</h2>
@@ -142,44 +147,24 @@
       </div>
 
       <!-- 5. MAIN_SLID -->
-      <!-- <div id="main_slide_wrap">
-        <ul class="main_slide_ul">
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide1.jpg" alt="#"
-            /></a>
-          </li>
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide2.jpg" alt="#"
-            /></a>
-          </li>
-          <li class="main_slide_li">
-            <a class="main_slide_a" href="#"
-              ><img src="./dist/images/main/main_slide3.jpg" alt="#"
-            /></a>
-          </li>
-        </ul>
-      </div> -->
-
       <!-- Flickity HTML init -->
       <div
         class="gallery js-flickity"
         data-flickity-options='{ "wrapAround": true }'
       >
         <div class="gallery-cell">
-          <a href="#">
-            <img src="./dist/images/main/main_slide1.jpg" alt="#" />
+          <a href="#" class="slide slideimage1">
+            slide image 1 'nasa downloads'</a
+          >
+        </div>
+        <div class="gallery-cell">
+          <a href="#" class="slide slideimage2">
+            slide image 2 'nasa follow'
           </a>
         </div>
         <div class="gallery-cell">
-          <a href="#">
-            <img src="./dist/images/main/main_slide2.jpg" alt="#" />
-          </a>
-        </div>
-        <div class="gallery-cell">
-          <a href="#">
-            <img src="./dist/images/main/main_slide3.jpg" alt="#" />
+          <a href="#" class="slide slideimage3">
+            slide image 3 'nasa audiences'
           </a>
         </div>
       </div>

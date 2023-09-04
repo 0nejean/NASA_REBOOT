@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+#wrap_main {
+  background: white;
+}
+
+//  <!-- ******* 1. MAIN_ABOUT ******* -->
+.main_youtube {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #333;
+  overflow: hidden;
+
+  .main_youtube_area {
+    width: 100%;
+    position: absolute;
+
+    /* 16비율 */
+    left: 50%;
+    margin-left: calc(100% / -2);
+
+    /* 9비율 */
+    top: 50%;
+    margin-top: calc(100% * 9 / 16 / -2);
+
+    &::before {
+      content: "";
+      display: block;
+      /* 16:9 영상 비율로 요소 크기 만들기! */
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+    }
+    #main_player {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .main_youtube_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+//  <!-- ******* 2. MAIN_MISSION ******* -->
+#main_mission_wrap {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  .main_mission_h2 {
+    font-size: xxx-large;
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 140px);
+  }
+  .main_mission_p {
+    position: absolute;
+    font-size: x-large;
+    top: 15%;
+    left: calc(50% - 110px);
+  }
+  .main_mission_btn1 {
+    position: absolute;
+    font-size: large;
+    font-weight: lighter;
+    top: 80%;
+    left: calc(50% - 50px);
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 100px;
+    }
+  }
+  .main_mission_bg {
+    display: block;
+    background: url(../images/main/main_mission.jpg) 0 0 / cover no-repeat;
+    width: 100%;
+    height: 800px;
+    text-indent: -9999px;
+  }
+}
+
+//  <!-- ******* 3. MAIN_PICS & TV ******* -->
+.main_picsntv_ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+
+  .main_picntvimg_g {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    filter: brightness(1);
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+
+  .main_picsntv_li_g {
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    color: white;
+  }
+
+  .main_picsntv_li1 {
+    .main_picsntv_li1_h2 {
+      text-align: right;
+      position: absolute;
+      font-weight: bolder;
+      font-size: 26px;
+      top: 10%;
+      left: 65%;
+    }
+    .main_picsntv_li1_p {
+      position: absolute;
+      font-weight: lighter;
+      font-size: 16px;
+      top: 33%;
+      left: 65%;
+    }
+    .main_picsntv_li1_btn {
+      position: absolute;
+      font-weight: normal;
+      font-size: 14px;
+      top: 45%;
+      left: 72%;
+      color: #4168a9;
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 0px;
+        left: 110%;
+      }
+    }
+    .main_picsntv_img_1 {
+      background: url(../images/main/main_g1_bg.jpg) 0 0 / cover no-repeat;
+    }
+  }
+
+  .main_picsntv_li2 {
+    .main_picsntv_li2_h2 {
+      text-align: right;
+      position: absolute;
+      font-weight: bolder;
+      font-size: 26px;
+      top: 10%;
+      left: 60%;
+    }
+    .main_picsntv_li2_p {
+      text-align: right;
+      position: absolute;
+      font-weight: lighter;
+      font-size: 16px;
+      top: 53%;
+      left: 62%;
+    }
+    .main_picsntv_li2_btn {
+      position: absolute;
+      font-weight: bolder;
+      font-size: 14px;
+      top: 72%;
+      left: 72%;
+      color: #4168a9;
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 0px;
+        left: 110%;
+      }
+    }
+    .main_picsntv_img_2 {
+      background: url(../images/main/main_g2_bg.jpg) 0 0 / cover no-repeat;
+    }
+  }
+
+  .main_picsntv_li3 {
+    .main_picsntv_li3_h2 {
+      text-align: right;
+      position: absolute;
+      font-weight: bolder;
+      font-size: 26px;
+      top: 10%;
+      left: 72%;
+    }
+    .main_picsntv_li3_p {
+      text-align: right;
+      position: absolute;
+      font-weight: lighter;
+      font-size: 16px;
+      top: 45%;
+      left: 72%;
+    }
+    .main_picsntv_li3_btn {
+      position: absolute;
+      font-weight: normal;
+      font-size: 14px;
+      top: 63%;
+      left: 71%;
+      color: #4168a9;
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 0px;
+        left: 110%;
+      }
+    }
+    .main_picsntv_img_3 {
+      background: url(../images/main/main_g3_bg.jpg) 0 0 / cover no-repeat;
+    }
+  }
+
+  .main_picsntv_li4 {
+    .main_picsntv_li4_h2 {
+      text-align: right;
+      position: absolute;
+      font-weight: bolder;
+      font-size: 26px;
+      top: 10%;
+      left: 70%;
+      color: black;
+      &::before {
+        content: "";
+        width: 50%;
+        height: 110%;
+        background: url(../images/nasa_logo.png) 0 0 / cover no-repeat;
+        position: absolute;
+        top: 0px;
+        left: -50%;
+      }
+    }
+    .main_picsntv_li4_p {
+      text-align: right;
+      position: absolute;
+      font-weight: lighter;
+      font-size: 16px;
+      top: 22%;
+      left: 62%;
+      color: black;
+    }
+    .main_picsntv_li4_btn {
+      position: absolute;
+      font-weight: normal;
+      font-size: 14px;
+      top: 35%;
+      left: 75%;
+      color: #4168a9;
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 0px;
+        left: 110%;
+      }
+    }
+    .main_picsntv_img_4 {
+      background: url(../images/main/main_g4_bg.jpg) 0 0 / cover no-repeat;
+    }
+  }
+}
+
+//  <!-- ******* 4. MAIN_TOPIC ******* -->
+#main_topic_wrap {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  .main_topic_video {
+    width: 100% !important;
+    height: 800px !important;
+    object-fit: cover;
+  }
+  .main_topic_h2 {
+    font-size: xxx-large;
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 140px);
+    color: white;
+  }
+  .main_topic_p {
+    position: absolute;
+    font-size: x-large;
+    top: 25%;
+    left: calc(50% - 140px);
+    color: white;
+  }
+  .main_topic_btn1 {
+    position: absolute;
+    font-size: large;
+    font-weight: lighter;
+    top: 80%;
+    left: calc(50% - 35px);
+    color: white;
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 100px;
+    }
+  }
+}
+
+//  <!-- ******* 5. MAIN_SLIDE ******* -->
+/* external css: flickity.css */
+// https://css-tricks.com/css-only-carousel/
+// * {
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+.gallery {
+  margin-top: 20px;
+  height: 420px;
+  .gallery-cell {
+    width: 60%;
+    height: 450px;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    height: 400px;
+    text-indent: -9999px;
+    filter: brightness(1);
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+  .slideimage1 {
+    background: url(../images/main/main_slide1.jpg) 0 0 no-repeat;
+  }
+  .slideimage2 {
+    background: url(../images/main/main_slide2.jpg) 0 0 no-repeat;
+  }
+  .slideimage3 {
+    background: url(../images/main/main_slide3.jpg) 0 0 no-repeat;
+  }
+}
