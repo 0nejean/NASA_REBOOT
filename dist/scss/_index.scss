@@ -4,11 +4,11 @@
   background: white;
 }
 
-//  <!-- ******* 1. MAIN_ABOUT ******* -->
+//  <!-- ******* 1. MAIN_VIDEO ******* -->
 .main_youtube {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   background-color: #333;
   overflow: hidden;
 
@@ -50,7 +50,49 @@
   }
 }
 
-//  <!-- ******* 2. MAIN_MISSION ******* -->
+//  <!-- ******* 2. MAIN_ABOUT ******* -->
+#main_about_wrap {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  .main_about_h2 {
+    font-size: xxx-large;
+    position: absolute;
+    top: 7%;
+    left: calc(50% - 140px);
+    color: white;
+  }
+  .main_about_p {
+    position: absolute;
+    font-size: x-large;
+    top: 17%;
+    left: calc(50% - 200px);
+    color: white;
+  }
+  .main_about_btn1 {
+    position: absolute;
+    font-size: large;
+    font-weight: lighter;
+    top: 80%;
+    left: calc(50% - 50px);
+    color: white;
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 100px;
+    }
+  }
+  .main_about_bg {
+    display: block;
+    background: url(../images/main/main_about.jpg) 0 0 / cover no-repeat;
+    width: 100%;
+    height: 800px;
+    text-indent: -9999px;
+  }
+}
+
+//  <!-- ******* 3. MAIN_MISSION ******* -->
 #main_mission_wrap {
   width: 100%;
   height: 800px;
@@ -58,13 +100,13 @@
   .main_mission_h2 {
     font-size: xxx-large;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: calc(50% - 140px);
   }
   .main_mission_p {
     position: absolute;
     font-size: x-large;
-    top: 15%;
+    top: 20%;
     left: calc(50% - 110px);
   }
   .main_mission_btn1 {
@@ -89,7 +131,7 @@
   }
 }
 
-//  <!-- ******* 3. MAIN_PICS & TV ******* -->
+//  <!-- ******* 4. MAIN_PICS & TV ******* -->
 .main_picsntv_ul {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +311,7 @@
   }
 }
 
-//  <!-- ******* 4. MAIN_TOPIC ******* -->
+//  <!-- ******* 5. MAIN_TOPIC ******* -->
 #main_topic_wrap {
   width: 100%;
   height: 800px;
@@ -307,9 +349,16 @@
       left: 100px;
     }
   }
+  .main_topic_bg {
+    display: block;
+    background: url(../images/main/main_topic.jpg) 0 0 / cover no-repeat;
+    width: 100%;
+    height: 800px;
+    text-indent: -9999px;
+  }
 }
 
-//  <!-- ******* 5. MAIN_SLIDE ******* -->
+//  <!-- ******* 6. MAIN_SLIDE ******* -->
 /* external css: flickity.css */
 // https://css-tricks.com/css-only-carousel/
 // * {

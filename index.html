@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="./dist/vendor/flickity.css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./dist/vendor/flickity-docs.min.js"></script>
-    <script src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
     <script src="./dist/js/include.js"></script>
   </head>
 
@@ -65,22 +65,53 @@
 
     <!-- ****************** main ****************** -->
     <main id="wrap_main">
-      <!-- 1. MAIN_ABOUT -->
-      <div class="main_youtube">
-        <div class="main_youtube_area">
-          <div id="main_player"></div>
-        </div>
+      <!-- 1. MAIN_video -->
+      <ul class="main_video">
+        <li>
+          <div class="main_youtube">
+            <div class="main_youtube_area">
+              <div id="main_player"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 2. MAIN_ABOUT-->
+      <div id="main_about_wrap">
+        <section class="main_about">
+          <ul>
+            <li>
+              <h2 class="main_about_h2">About NASA</h2>
+              <p class="main_about_p">The global leader in space exploration</p>
+              <button
+                class="btn_g main_about_btn1"
+                onclick="location.href='//127.0.0.1:5500/about.html'"
+              >
+                Learn more
+              </button>
+              <a class="main_about_bg" href="javascript:void(0);"
+                >main about area backgroud image : the earth image with black
+                wallpaper</a
+              >
+            </li>
+          </ul>
+        </section>
       </div>
 
-      <!-- 2. MAIN_MISSION -->
+      <!-- 3. MAIN_MISSION -->
       <div id="main_mission_wrap">
         <section class="main_mission">
           <ul>
             <li>
               <h2 class="main_mission_h2">Space Station</h2>
               <p class="main_mission_p">20 Years on the Station</p>
-              <button class="btn_g main_mission_btn1">Learn more</button>
-              <a class="main_mission_bg" href="#"
+              <button
+                class="btn_g main_mission_btn1"
+                onclick="location.href='//127.0.0.1:5500/mission.html'"
+              >
+                Learn more
+              </button>
+              <a class="main_mission_bg" href="javascript:void(0);"
                 >main mission area backgroud image : spacestation image with
                 white wallpaper</a
               >
@@ -89,11 +120,13 @@
         </section>
       </div>
 
-      <!-- 3. MAIN_Pics & TV -->
+      <!-- 4. MAIN_Pics & TV -->
       <div id="main_picsntv_wrap">
         <ul class="main_picsntv_ul">
           <li class="main_picsntv_li_g main_picsntv_li1">
-            <a href="#" class="main_picntvimg_g main_picsntv_img_1"
+            <a
+              href="javascript:void(0);"
+              class="main_picntvimg_g main_picsntv_img_1"
               >main pics n tv image1 about Astronaut in space</a
             >
             <h2 class="main_picsntv_li1_h2">
@@ -101,10 +134,18 @@
               in space
             </h2>
             <p class="main_picsntv_li1_p">Beyond the World</p>
-            <button class="main_picsntv_li1_btn">Watch Now</button>
+            <button
+              class="main_picsntv_li1_btn"
+              onclick="location.href='//127.0.0.1:5500/picsntv.html'"
+            >
+              Watch Now
+            </button>
           </li>
+
           <li class="main_picsntv_li_g main_picsntv_li2">
-            <a href="#" class="main_picntvimg_g main_picsntv_img_2"
+            <a
+              href="javascript:void(0);"
+              class="main_picntvimg_g main_picsntv_img_2"
               >main pics n tv image2 about Triumph After Splashdown of Apollo
               11</a
             >
@@ -115,55 +156,82 @@
             <p class="main_picsntv_li2_p">
               Neil Armstrong <br />landed on the moon
             </p>
-            <button class="main_picsntv_li2_btn">Watch Now</button>
+            <button
+              class="main_picsntv_li2_btn"
+              onclick="location.href='//127.0.0.1:5500/picsntv.html'"
+            >
+              Watch Now
+            </button>
           </li>
+
           <li class="main_picsntv_li_g main_picsntv_li3">
-            <a href="#" class="main_picntvimg_g main_picsntv_img_3"
+            <a
+              href="javascript:void(0);"
+              class="main_picntvimg_g main_picsntv_img_3"
               >main pics n tv image3 FAR FROM EARTH</a
             >
             <h2 class="main_picsntv_li3_h2">FAR <br />FROM <br />EARTH</h2>
             <p class="main_picsntv_li3_p">A Voyager <br />From Home</p>
-            <button class="main_picsntv_li3_btn">Watch Now</button>
+            <button
+              class="main_picsntv_li3_btn"
+              onclick="location.href='//127.0.0.1:5500/picsntv.html' "
+            >
+              Watch Now
+            </button>
           </li>
+
           <li class="main_picsntv_li_g main_picsntv_li4">
-            <a href="#" class="main_picntvimg_g main_picsntv_img_4"
+            <a
+              href="javascript:void(0);"
+              class="main_picntvimg_g main_picsntv_img_4"
               >main pics n tv image4 NASA TV</a
             >
             <h2 class="main_picsntv_li4_h2">NASA TV</h2>
             <p class="main_picsntv_li4_p">Streaming on Youtube</p>
-            <button class="main_picsntv_li4_btn">Watch Now</button>
+            <button
+              class="main_picsntv_li4_btn"
+              onclick="location.href='//127.0.0.1:5500/picsntv.html' "
+            >
+              Watch Now
+            </button>
           </li>
         </ul>
       </div>
 
-      <!-- 4. MAIN_TOPIC -->
+      <!-- 5. MAIN_TOPIC -->
       <div id="main_topic_wrap">
-        <video class="main_topic_video" autoplay muted loop>
-          <source type="video/mp4" src="./dist/videos/topic_video.mp4" />
-        </video>
         <h2 class="main_topic_h2">Moon to MARS</h2>
         <p class="main_topic_p">Innovative &#38; Sustainable Topic</p>
-        <button class="btn_g main_topic_btn1">Learn more</button>
+        <button
+          class="btn_g main_topic_btn1"
+          onclick="location.href='//127.0.0.1:5500/topic.html'"
+        >
+          Learn more
+        </button>
+        <a class="main_topic_bg" href="javascript:void(0);"
+          >main topic area backgroud image : surface of moon image with black
+          wallpaper</a
+        >
       </div>
 
-      <!-- 5. MAIN_SLID -->
+      <!-- 6. MAIN_SLID -->
       <!-- Flickity HTML init -->
       <div
         class="gallery js-flickity"
         data-flickity-options='{ "wrapAround": true }'
       >
         <div class="gallery-cell">
-          <a href="#" class="slide slideimage1">
+          <a href="javascript:void(0);" class="slide slideimage1">
             slide image 1 'nasa downloads'</a
           >
         </div>
         <div class="gallery-cell">
-          <a href="#" class="slide slideimage2">
+          <a href="javascript:void(0);" class="slide slideimage2">
             slide image 2 'nasa follow'
           </a>
         </div>
         <div class="gallery-cell">
-          <a href="#" class="slide slideimage3">
+          <a href="javascript:void(0);" class="slide slideimage3">
             slide image 3 'nasa audiences'
           </a>
         </div>

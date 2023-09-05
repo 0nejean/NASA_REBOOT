@@ -9,6 +9,12 @@
   width: 100%;
   height: 900px;
   position: relative;
+  .mission_top_img {
+    display: block;
+    background: url(../images/mission/mission_top_bg2.jpg) 0 0 / cover no-repeat;
+    width: 100%;
+    height: 800px;
+  }
   .mission_top_h2 {
     position: absolute;
     font-size: xxx-large;
@@ -23,12 +29,16 @@
   }
   .mission_top_btn1 {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: calc(50% - 50px);
-  }
-  .mission_top_img {
-    width: 100%;
-    height: 800px;
+    font-size: large;
+    font-weight: lighter;
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 0px;
+      left: 90px;
+    }
   }
   .mission_top_movinfnt {
     width: 100%;
@@ -72,53 +82,233 @@
   position: relative;
   width: 100%;
   height: 800px;
-
   .mission_middle_banner {
-    display: flex;
-    flex-wrap: wrap;
-    // height: 50%;
-    ul {
+    width: 100%;
+    height: 50%;
+    .mission_middle_banner_ul {
       display: flex;
-      li {
+      flex-wrap: wrap;
+      height: 100%;
+      .mission_banner_img_g {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+        filter: brightness(1);
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+      .mission_middle_banner_li1 {
+        position: relative;
         width: 50%;
-        img {
-          width: 100%;
-          filter: brightness(1);
-          &:hover {
-            filter: brightness(0.5);
+        .mission_banner_li1_h2 {
+          text-align: right;
+          position: absolute;
+          font-weight: bolder;
+          font-size: 26px;
+          top: 10%;
+          left: 75%;
+        }
+        .mission_banner_li1_p {
+          text-align: right;
+          position: absolute;
+          font-weight: lighter;
+          font-size: 16px;
+          top: 33%;
+          left: 79%;
+        }
+        .mission_banner_btn1 {
+          position: absolute;
+          font-weight: normal;
+          font-size: 14px;
+          top: 55%;
+          left: 83%;
+          color: #4168a9;
+          &::before {
+            content: ">";
+            position: absolute;
+            top: 0px;
+            left: 110%;
           }
         }
-        a {
-          display: block;
-          width: 100%;
+        .mission_banner_img1 {
+          background: url(../images/mission/mission_b1.jpg) 0 0 / cover
+            no-repeat;
+        }
+      }
+
+      .mission_middle_banner_li2 {
+        position: relative;
+        width: 50%;
+        .mission_banner_li2_h2 {
+          text-align: right;
+          position: absolute;
+          font-weight: bolder;
+          font-size: 26px;
+          top: 10%;
+          left: 73%;
+          color: white;
+        }
+        .mission_banner_btn2 {
+          position: absolute;
+          font-weight: bold;
+          font-size: 14px;
+          top: 35%;
+          left: 84%;
+          color: #4168a9;
+          &::before {
+            content: ">";
+            position: absolute;
+            top: 0px;
+            left: 110%;
+          }
+        }
+        .mission_banner_img2 {
+          background: url(../images/mission/mission_b2.jpg) 0 0 / cover
+            no-repeat;
         }
       }
     }
   }
+
   .mission_middle_card {
     display: flex;
     flex-wrap: wrap;
-    // height: 50%;
+    height: 50%;
     padding: 1% 3% 1% 3%;
-    ul {
+    .mission_middle_card_ul {
       display: flex;
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      li {
-        width: 30%;
+      .mission_card_img_g {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
         border-radius: 20px;
-        img {
-          width: 100%;
-          border-radius: 20px;
-          filter: brightness(1);
-          &:hover {
-            filter: brightness(0.5);
+        filter: brightness(1);
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+      .mission_middle_card_li1 {
+        position: relative;
+        width: 30%;
+        .mission_card_li1_h2 {
+          text-align: right;
+          position: absolute;
+          font-weight: bolder;
+          font-size: 26px;
+          top: 13%;
+          left: 36%;
+          color: white;
+        }
+        .mission_card_li1_p {
+          text-align: right;
+          position: absolute;
+          font-weight: lighter;
+          font-size: 16px;
+          top: 33%;
+          left: 79%;
+          color: white;
+        }
+        .mission_card_btn1 {
+          position: absolute;
+          font-weight: normal;
+          font-size: 14px;
+          top: 73%;
+          left: 43%;
+          color: #4168a9;
+          &::before {
+            content: ">";
+            position: absolute;
+            top: 0px;
+            left: 110%;
           }
         }
-        a {
-          display: block;
-          width: 100%;
+        .mission_card_img1 {
+          background: url(../images/mission/mission_c1.jpg) 0 0 / cover
+            no-repeat;
+        }
+      }
+      .mission_middle_card_li2 {
+        position: relative;
+        width: 30%;
+        .mission_card_li2_h2 {
+          text-align: center;
+          position: absolute;
+          font-weight: bolder;
+          font-size: 26px;
+          top: 5%;
+          left: 35%;
+        }
+        .mission_card_li2_p {
+          text-align: right;
+          position: absolute;
+          font-weight: lighter;
+          font-size: 16px;
+          top: 28%;
+          left: 42%;
+        }
+        .mission_card_btn2 {
+          position: absolute;
+          font-weight: normal;
+          font-size: 14px;
+          top: 42%;
+          left: 43%;
+          color: #4168a9;
+          &::before {
+            content: ">";
+            position: absolute;
+            top: 0px;
+            left: 110%;
+          }
+        }
+        .mission_card_img2 {
+          background: url(../images/mission/mission_c2.jpg) 0 0 / cover
+            no-repeat;
+        }
+      }
+      .mission_middle_card_li3 {
+        position: relative;
+        width: 30%;
+        .mission_card_li3_h2 {
+          text-align: center;
+          position: absolute;
+          font-weight: bolder;
+          font-size: 26px;
+          top: 45%;
+          left: 35%;
+          color: white;
+        }
+        .mission_card_li3_p {
+          text-align: right;
+          position: absolute;
+          font-weight: lighter;
+          font-size: 16px;
+          top: 70%;
+          left: 39%;
+          color: white;
+        }
+        .mission_card_btn3 {
+          position: absolute;
+          font-weight: normal;
+          font-size: 14px;
+          top: 85%;
+          left: 43%;
+          color: #4168a9;
+          &::before {
+            content: ">";
+            position: absolute;
+            top: 0px;
+            left: 110%;
+          }
+        }
+        .mission_card_img3 {
+          background: url(../images/mission/mission_c3.jpg) 0 0 / cover
+            no-repeat;
         }
       }
     }

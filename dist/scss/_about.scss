@@ -22,12 +22,15 @@
     left: calc(50% - 70px);
     margin-right: 4%;
     font-size: large;
+    font-weight: normal;
   }
   .about_top_btn1 {
     color: white;
     position: absolute;
     top: 80%;
     left: calc(50% - 70px);
+    font-weight: lighter;
+    font-size: large;
     &::before {
       content: ">";
       position: absolute;
@@ -267,12 +270,15 @@
     top: 27%;
     left: calc(50% - 600px);
     font-size: large;
+    font-weight: normal;
   }
   .about_bottom_btn1 {
     color: white;
     position: absolute;
     top: 57%;
     left: calc(50% - 600px);
+    font-weight: lighter;
+    font-size: large;
     &::before {
       content: ">";
       position: absolute;

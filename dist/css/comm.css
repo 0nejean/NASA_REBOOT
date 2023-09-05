@@ -270,7 +270,7 @@ legend {
 .main_youtube {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   background-color: #333;
   overflow: hidden;
 }
@@ -308,6 +308,47 @@ legend {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+#main_about_wrap {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+#main_about_wrap .main_about_h2 {
+  font-size: xxx-large;
+  position: absolute;
+  top: 7%;
+  left: calc(50% - 140px);
+  color: white;
+}
+#main_about_wrap .main_about_p {
+  position: absolute;
+  font-size: x-large;
+  top: 17%;
+  left: calc(50% - 200px);
+  color: white;
+}
+#main_about_wrap .main_about_btn1 {
+  position: absolute;
+  font-size: large;
+  font-weight: lighter;
+  top: 80%;
+  left: calc(50% - 50px);
+  color: white;
+}
+#main_about_wrap .main_about_btn1::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+#main_about_wrap .main_about_bg {
+  display: block;
+  background: url(../images/main/main_about.jpg) 0 0/cover no-repeat;
+  width: 100%;
+  height: 800px;
+  text-indent: -9999px;
+}
+
 #main_mission_wrap {
   width: 100%;
   height: 800px;
@@ -316,13 +357,13 @@ legend {
 #main_mission_wrap .main_mission_h2 {
   font-size: xxx-large;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: calc(50% - 140px);
 }
 #main_mission_wrap .main_mission_p {
   position: absolute;
   font-size: x-large;
-  top: 15%;
+  top: 20%;
   left: calc(50% - 110px);
 }
 #main_mission_wrap .main_mission_btn1 {
@@ -550,6 +591,13 @@ legend {
   top: 0px;
   left: 100px;
 }
+#main_topic_wrap .main_topic_bg {
+  display: block;
+  background: url(../images/main/main_topic.jpg) 0 0/cover no-repeat;
+  width: 100%;
+  height: 800px;
+  text-indent: -9999px;
+}
 
 /* external css: flickity.css */
 .gallery {
@@ -602,12 +650,15 @@ legend {
   left: calc(50% - 70px);
   margin-right: 4%;
   font-size: large;
+  font-weight: normal;
 }
 .about_top .about_top_btn1 {
   color: white;
   position: absolute;
   top: 80%;
   left: calc(50% - 70px);
+  font-weight: lighter;
+  font-size: large;
 }
 .about_top .about_top_btn1::before {
   content: ">";
@@ -838,12 +889,15 @@ legend {
   top: 27%;
   left: calc(50% - 600px);
   font-size: large;
+  font-weight: normal;
 }
 .about_bottom .about_bottom_btn1 {
   color: white;
   position: absolute;
   top: 57%;
   left: calc(50% - 600px);
+  font-weight: lighter;
+  font-size: large;
 }
 .about_bottom .about_bottom_btn1::before {
   content: ">";
@@ -868,6 +922,12 @@ legend {
   height: 900px;
   position: relative;
 }
+#mission_top .mission_top_img {
+  display: block;
+  background: url(../images/mission/mission_top_bg2.jpg) 0 0/cover no-repeat;
+  width: 100%;
+  height: 800px;
+}
 #mission_top .mission_top_h2 {
   position: absolute;
   font-size: xxx-large;
@@ -882,12 +942,16 @@ legend {
 }
 #mission_top .mission_top_btn1 {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: calc(50% - 50px);
+  font-size: large;
+  font-weight: lighter;
 }
-#mission_top .mission_top_img {
-  width: 100%;
-  height: 800px;
+#mission_top .mission_top_btn1::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 90px;
 }
 #mission_top .mission_top_movinfnt {
   width: 100%;
@@ -928,52 +992,228 @@ legend {
   height: 800px;
 }
 #mission_middle .mission_middle_banner {
+  width: 100%;
+  height: 50%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
-#mission_middle .mission_middle_banner ul {
-  display: flex;
-}
-#mission_middle .mission_middle_banner ul li {
-  width: 50%;
-}
-#mission_middle .mission_middle_banner ul li img {
-  width: 100%;
-  filter: brightness(1);
-}
-#mission_middle .mission_middle_banner ul li img:hover {
-  filter: brightness(0.5);
-}
-#mission_middle .mission_middle_banner ul li a {
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_banner_img_g {
   display: block;
   width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  filter: brightness(1);
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_banner_img_g:hover {
+  filter: brightness(0.5);
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 {
+  position: relative;
+  width: 50%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 .mission_banner_li1_h2 {
+  text-align: right;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26px;
+  top: 10%;
+  left: 75%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 .mission_banner_li1_p {
+  text-align: right;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 16px;
+  top: 33%;
+  left: 79%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 .mission_banner_btn1 {
+  position: absolute;
+  font-weight: normal;
+  font-size: 14px;
+  top: 55%;
+  left: 83%;
+  color: #4168a9;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 .mission_banner_btn1::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li1 .mission_banner_img1 {
+  background: url(../images/mission/mission_b1.jpg) 0 0/cover no-repeat;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li2 {
+  position: relative;
+  width: 50%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li2 .mission_banner_li2_h2 {
+  text-align: right;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26px;
+  top: 10%;
+  left: 73%;
+  color: white;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li2 .mission_banner_btn2 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  top: 35%;
+  left: 84%;
+  color: #4168a9;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li2 .mission_banner_btn2::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+#mission_middle .mission_middle_banner .mission_middle_banner_ul .mission_middle_banner_li2 .mission_banner_img2 {
+  background: url(../images/mission/mission_b2.jpg) 0 0/cover no-repeat;
 }
 #mission_middle .mission_middle_card {
   display: flex;
   flex-wrap: wrap;
+  height: 50%;
   padding: 1% 3% 1% 3%;
 }
-#mission_middle .mission_middle_card ul {
+#mission_middle .mission_middle_card .mission_middle_card_ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
-#mission_middle .mission_middle_card ul li {
-  width: 30%;
-  border-radius: 20px;
-}
-#mission_middle .mission_middle_card ul li img {
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_card_img_g {
+  display: block;
   width: 100%;
+  height: 100%;
+  text-indent: -9999px;
   border-radius: 20px;
   filter: brightness(1);
 }
-#mission_middle .mission_middle_card ul li img:hover {
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_card_img_g:hover {
   filter: brightness(0.5);
 }
-#mission_middle .mission_middle_card ul li a {
-  display: block;
-  width: 100%;
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 {
+  position: relative;
+  width: 30%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 .mission_card_li1_h2 {
+  text-align: right;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26px;
+  top: 13%;
+  left: 36%;
+  color: white;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 .mission_card_li1_p {
+  text-align: right;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 16px;
+  top: 33%;
+  left: 79%;
+  color: white;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 .mission_card_btn1 {
+  position: absolute;
+  font-weight: normal;
+  font-size: 14px;
+  top: 73%;
+  left: 43%;
+  color: #4168a9;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 .mission_card_btn1::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li1 .mission_card_img1 {
+  background: url(../images/mission/mission_c1.jpg) 0 0/cover no-repeat;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 {
+  position: relative;
+  width: 30%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 .mission_card_li2_h2 {
+  text-align: center;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26px;
+  top: 5%;
+  left: 35%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 .mission_card_li2_p {
+  text-align: right;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 16px;
+  top: 28%;
+  left: 42%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 .mission_card_btn2 {
+  position: absolute;
+  font-weight: normal;
+  font-size: 14px;
+  top: 42%;
+  left: 43%;
+  color: #4168a9;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 .mission_card_btn2::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li2 .mission_card_img2 {
+  background: url(../images/mission/mission_c2.jpg) 0 0/cover no-repeat;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 {
+  position: relative;
+  width: 30%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 .mission_card_li3_h2 {
+  text-align: center;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26px;
+  top: 45%;
+  left: 35%;
+  color: white;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 .mission_card_li3_p {
+  text-align: right;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 16px;
+  top: 70%;
+  left: 39%;
+  color: white;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 .mission_card_btn3 {
+  position: absolute;
+  font-weight: normal;
+  font-size: 14px;
+  top: 85%;
+  left: 43%;
+  color: #4168a9;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 .mission_card_btn3::before {
+  content: ">";
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+#mission_middle .mission_middle_card .mission_middle_card_ul .mission_middle_card_li3 .mission_card_img3 {
+  background: url(../images/mission/mission_c3.jpg) 0 0/cover no-repeat;
 }
 
 #mission_bottom {
@@ -985,11 +1225,37 @@ legend {
   background: black;
 }
 
-.topic_video_full {
-  width: 100% !important;
-  height: 760px !important;
-  -o-object-fit: cover;
-     object-fit: cover;
+.topic_youtube {
+  position: relative;
+  width: 100%;
+  height: 762px;
+  background-color: #333;
+  overflow: hidden;
+}
+.topic_youtube .topic_youtube_area {
+  width: 100%;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -50%;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -28.125%;
+}
+.topic_youtube .topic_youtube_area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.topic_youtube .topic_youtube_area #topic_player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sliderText {
