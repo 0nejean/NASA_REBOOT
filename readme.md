@@ -17,7 +17,7 @@ https://css-validator.kldp.org/
 
 ## TO DO
 
-- TUE |
+- TUE |  
   v 토픽 상단의 수정  
   v 메인 어바웃 추가  
   v 미션 수정(상단 > 레이아웃 > 웹표준 + 접근)
