@@ -3,7 +3,7 @@
 #wrap_topic {
   background: black;
 }
-
+// <!-- topic top -->
 // video
 .topic_youtube {
   position: relative;
@@ -75,46 +75,65 @@
       /* slick을 적용시킬 요소 */
       margin-left: auto;
       margin-right: auto;
-      img {
-        width: 100%;
-        filter: brightness(1);
-        &:hover {
-          filter: brightness(0.5);
-        }
-      }
-      a {
-        width: 100%;
-        height: 400px;
-      }
       .item {
         /* 슬라이드 되어야 할 아이템 */
         width: 100%;
         height: 400px;
         border: 1px solid black;
         background: black;
+        .item_g {
+          display: block;
+          width: 100%;
+          height: 400px;
+          text-indent: -9999px;
+          filter: brightness(1);
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        .slider_item_a1 {
+          background: url(../images/topic/topic_s1.jpg) 0 0 / cover no-repeat;
+        }
+        .slider_item_a2 {
+          background: url(../images/topic/topic_s2.jpg) 0 0 / cover no-repeat;
+        }
+        .slider_item_a3 {
+          background: url(../images/topic/topic_s3.jpg) 0 0 / cover no-repeat;
+        }
+        .slider_item_a4 {
+          background: url(../images/topic/topic_s4.jpg) 0 0 / cover no-repeat;
+        }
+        .slider_item_a5 {
+          background: url(../images/topic/topic_s5.jpg) 0 0 / cover no-repeat;
+        }
       }
     }
+
+    // .next,
+    // .prev {
+    //   /* 커스텀 버튼. 위치를 잡기위해 absolute 를 준다 */
+    //   position: absolute;
+    //   top: 35%;
+    // }
+    // .next {
+    //   right: 5%;
+    // }
+    // .prev {
+    //   left: 5%;
+    // }
   }
-
-  // .next,
-  // .prev {
-  //   /* 커스텀 버튼. 위치를 잡기위해 absolute 를 준다 */
-  //   position: absolute;
-  //   top: 35%;
-  // }
-  // .next {
-  //   right: 5%;
-  // }
-  // .prev {
-  //   left: 5%;
-  // }
 }
-
+// <!-- topic bottom -->
 // bottom
-.topic_main_bottom_bg {
-  img {
+#topic_bottom {
+  width: 100%;
+  height: 1000px;
+  .topic_bottom_bg {
+    display: block;
+    text-indent: -9999px;
     width: 100%;
     height: 1000px;
-    object-fit: fill;
+    background: url(../images/topic/topic_bottom.jpg) 0 0 / cover no-repeat;
+    // object-fit: fill;
   }
 }

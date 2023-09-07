@@ -6,7 +6,7 @@
 2. about - v
 3. mission - v
 4. pics n tv - v
-5. topic - 웹표준/웹접근성 작업
+5. topic - v
 6. play - not yet
 
 ## WEB STANDARD ~ CHECK LIST
@@ -26,5 +26,5 @@ https://css-validator.kldp.org/
   v 메인 페이지 그누보드 활성화
 
 - THU |
-  > 토픽 수정(상단 > 레이아웃 > 웹표준 + 접근)  
-  > 서브페이지 그누보드 작업
+  v 토픽 수정(상단 > 레이아웃 > 웹표준 + 접근)
+  > 그누보드 메인페이지 메뉴 간격 조정 + 미션 게시판 설정
