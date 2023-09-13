@@ -41,7 +41,7 @@ https://css-validator.kldp.org/
    v 헤더 글자 간 간격 조정 + 풋터 내용의 추가                
    v qnb 글자 크기                  
    v 그누보드 타이틀 이름
-   x 각 영역 h2로 제목 붙여주기 - 웹접근성
+   x 각 영역 h2로 제목 붙여주기 - 웹접근성  
      = a태그에 text indent 살며시 넣는거 말고는 아직 방법을 몰라서 일단 pending         
 
 - 230913 WED | 반응형 START         
