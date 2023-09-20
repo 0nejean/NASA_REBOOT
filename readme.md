@@ -65,8 +65,8 @@ https://css-validator.kldp.org/
   v mission 반응형 1440(top:803(703 이미지/100 무빙폰트) 1280(803) 1024(743)        
 
 - 230921 THU |     
-  = mission 반응형 744(top 700 middle 300*5) / 428(500)
-  = mission_top_ul 높이값 1440부터 세팅 > 744 mobile용 이미지 수정 > 차례대로 할 것    
+  = mission 반응형 744(top 700 middle 300*5) / 428(500)  
+  = mission_top_ul 높이값 1440부터 세팅 > 744 mobile용 이미지 수정 > 차례대로 할 것      
   
 - 230922 FRI |  
   = Topic 반응형  
