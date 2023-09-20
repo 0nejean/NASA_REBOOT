@@ -65,7 +65,7 @@ https://css-validator.kldp.org/
   v mission 반응형 1440(top 900 > 803(703 이미지/100 무빙폰트) / 1280 / 1024        
 
 - 230921 THU |     
-  v mission 반응형 744 / 428    
+  = mission 반응형 744 / 428    
   
 - 230922 FRI |  
-v Topic 반응형  
+  = Topic 반응형  
