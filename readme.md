@@ -16,7 +16,7 @@ https://validator.kldp.org/
 https://css-validator.kldp.org/
 
 ## TO DO
-
+6, 7 HTML, CSS 습득 / 8 조별 / 9 개별(웹표준, 웹접근성, 반응형) 8/21 ~ 8/25 디자인 8/28 ~ 9/4 마크업 + 스타일시트     
 - 230905 TUE |   
   v 토픽 상단의 수정    
   v 메인 어바웃 추가    
@@ -62,11 +62,14 @@ https://css-validator.kldp.org/
 
 - 230920 WED |        
   v about 반응형 428(500)      
-  v mission 반응형 1440(top:803(703 이미지/100 무빙폰트) 1280(803) 1024(743)        
+  v mission 반응형 1440(top:803(703 이미지/100 무빙폰트) 1280(803) 1024(743)          
 
 - 230921 THU |     
-  = mission 반응형 744(top 700 middle 300*5) / 428(500)  
-  = mission_top_ul 높이값 1440부터 세팅 > 744 mobile용 이미지 수정 > 차례대로 할 것      
-  
+ v mission 반응형 744(top 700 middle 300*5) / 428(500)      
+ v topic 반응형 1440  
+    
 - 230922 FRI |  
-  = Topic 반응형  
+  = topic 반응형 1024 - 게시판 부터 ~    
+  = picsntv 반응형 1440 / 1024 / 428      
+  
+- +a | 헤더/풋터  
